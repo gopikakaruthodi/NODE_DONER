@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/doner.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="http://localhost:3000/">
+            <img src="../img/left-arrow.png" alt="" ></a>
+
+        </div>
+        <h2>ADD DONERS</h2>
+        <div class="first">
+
+            <form action="/submit" method="POST" >
+            <table>
+                <tr>
+                        <td>
+                                <label for="name">Name</label>
+                        </td>
+                        <td class="input" >
+                                <input type="text" name="name" id="name">
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td class="input">
+                            <input type="text" name="email" id="email" placeholder="asd@asd.com">
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="Phone">Phone</label>
+                        </td>
+                        <td class="input">
+                            <input type="text" name="phone" id="phone" >
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <label for="Bgroup">Blood Group</label>
+                        </td>
+                        <td class="input">
+                            <!-- <input type="text" name="Bgroup" id="Bgroup"> -->
+                            <select name="Bgroup" id="Bgroup">
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="gender">Gender</label>
+                        </td>
+                        <td class="gender">
+                            <input type="radio" name="gender" id="gender" value="Male"><span class="male">Male</span>
+                            <input type="radio" name="gender" id="gender" value="Female"><span>Female</span>
+                            <input type="radio" name="gender" id="gender" value="Other"><span>Other</span>                     </td>
+                </tr>
+                <tr>
+                    <td>
+                     <input type="submit" value="Add" class="button">
+
+                    </td>                
+                </tr>
+            </table>
+        </form>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

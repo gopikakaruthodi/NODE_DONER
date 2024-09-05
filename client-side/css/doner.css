@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oleo+Script:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    /* background: linear-gradient(rgb(209, 162, 211),rgb(255, 255, 255)); */
+    /* background-color: antiquewhite; */
+    /* background: linear-gradient(rgb(226, 170, 170),white); */
+    background-color: #F5F5F5;
+    
+}
+
+.container h2{
+    padding-top: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+    color: rgb(158, 29, 29);
+    font-size: 35px;
+
+}
+
+.first{
+    
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+/* 
+.input{
+  width: 100%;
+  background-color: red;
+
+}
+
+input{
+    margin-left: 20%;
+} */
+
+table{
+    width: 100%;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    /* background: linear-gradient(rgb(236, 57, 57),rgb(232, 192, 198)); */
+    background-color: #fff;
+    border-radius: 12px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 1); */
+    max-width: 400px;
+    border-top:5px solid #D32F2F ;
+
+}
+
+.input input,select{
+    height: 32px;
+    width: 400px;
+    padding-left: 10px;
+    
+
+}
+input[type="text"]:focus {
+    outline: none;
+    border-color: #D32F2F;
+  }
+.input{
+    margin-left: 50px;
+    /* padding: 10px 80px; */
+    height: 47px;
+}
+#gender{
+    /* margin-left: 50px; */
+    width: 3%;
+    margin-right: 6px;
+    margin-top: 15px;
+}
+span{
+    margin-right: 10px;
+}
+label{
+    display: block;
+    margin-right: 30px;
+    font-weight: bold;
+    color: #666;
+    font-size: 14px;
+}
+
+.btn{
+    padding: 10px 20px;
+}
+.button{
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #D32F2F;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #B71C1C;
+}
+
+#Bgroup{
+    height: 30px;
+    width: 413px;
+}
+
+.gender input{
+    accent-color: rgb(170, 9, 9);
+}
+
+.nav img{
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover{
+    /* background-color: #efebea;
+
+}  */
+
+
+
+
+
+   
+
+
+
+
