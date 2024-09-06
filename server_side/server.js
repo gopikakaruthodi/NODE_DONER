@@ -163,11 +163,14 @@ const app=http.createServer(async(req,res)=>{
 });
 
 client.connect().then(()=>{
+    
     app.listen(PORT,()=>{
         console.log(`http://localhost:${PORT}`);
     });
 
 }).catch((error)=>{
+
     console.log(error);
+
 });
 
