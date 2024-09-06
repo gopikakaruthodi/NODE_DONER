@@ -11,7 +11,7 @@ async function getData(){
     <input type="text" name="Bgroup" id="Bgroup-${donor._id}" value=${donor.Bgroup} placeholder="Blood Group" disabled=true>
     <input type="text" name="gender" id="gender-${donor._id}" value=${donor.gender} placeholder="Gender" disabled=true>
     <button onclick="handleEdit('${donor._id}')" class="edit">Edit</button>
-    <button class="save">Save</button>
+    <button class="save" onclick="handleSave('${donor._id}')" >Save</button>
     <button onclick="handleDelete('${donor._id}')" class="delete">Delete</button> </div>`
         
     })
@@ -21,6 +21,9 @@ async function getData(){
 
 getData()
 
+
+
+// edit input informations
 function handleEdit(id){
     document.getElementById(`name-${id}`).disabled=false
     document.getElementById(`email-${id}`).disabled=false
@@ -29,6 +32,35 @@ function handleEdit(id){
     document.getElementById(`gender-${id}`).disabled=false
 
 
+}
+
+// for save
+
+async function handleSave(id){
+    // alert(id) to check function wrkng or not
+
+    let name=document.getElementById(`name-${id}`).value;
+    let email=document.getElementById(`email-${id}`).value;
+    let phone=document.getElementById(`phone-${id}`).value;
+    let Bgroup=document.getElementById(`Bgroup-${id}`).value;
+    let gender=document.getElementById(`gender-${id}`).value;
+
+    console.log(name,email,phone,Bgroup,gender);
+
+    let datas={id,name,email,phone,Bgroup,gender}
+    let jsonData=JSON.stringify(datas);
+    console.log(jsonData);
+
+    const res=await fetch("http://localhost:3000/update",{
+        method:"put",
+        "Content-Type":"text/json",
+        body:jsonData
+    })
+    const resData=await res.text();
+    console.log(resData);
+    getData();
+
+    
 }
 
 async function handleDelete(id){
